@@ -1,0 +1,18 @@
+<%- include("../includes/boilerplate.ejs") %>
+    <h3>Edit Details</h3>
+    <form method="POST" action="/listing/<%= dataToBeEdit._id %>?_method=PUT"> 
+        <input type="text" value="<%= dataToBeEdit.title %>" name="title">
+        <br><br>
+        <input type="text" value="<%= dataToBeEdit.description %>" name="description">
+        <br><br>
+        <input type="text" value="<%= dataToBeEdit.price %>" name="price">
+        <br><br>
+        <input type="text" value="<%= dataToBeEdit.location %>" name="location">
+        <br><br>
+        <input type="text" value="<%= dataToBeEdit.country %>" name="country">
+        <br><br>
+        <button type="submit" class="btn btn-primary">submit</button>
+    </form>
+</div>
+</body>
+</html>

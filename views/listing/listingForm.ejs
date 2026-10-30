@@ -1,0 +1,18 @@
+<%- include("../includes/boilerplate.ejs") %>
+    <h3>register Yourself here</h3>
+    <form action="/listing/new" method="post">
+        <input type="text" placeholder="enter title" name="title" required>
+        <br><br>
+        <input type="text" placeholder="enter description" name="description" required>
+        <br><br>
+        <input type="number" placeholder="enter price" name="price">
+        <br><br>
+        <input type="text" placeholder="enter location name" name="location">
+        <br><br>
+        <input type="text" placeholder="enter country name" name="country">
+        <br><br>
+        <button type="submit" class="btn btn-success">submit</button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<%- include("../includes/boilerplate.ejs") %>
+    <h3>Listing Details</h3>
+    <ul>
+        <h4><%= deatailedData.title %></h4>
+        <li><%= deatailedData.description %></li>
+        <li>&#8377; <%= deatailedData.price != null ? deatailedData.price.toLocaleString('en-IN') : 'N/A' %></li>
+        <li><%= deatailedData.location %></li>
+        <li><%= deatailedData.country %></li>
+    </ul>
+    <a href="/listing/<%= deatailedData._id %>/edit" class="btn btn-secondary">edit details</a>
+    <br><br>
+    <form action="/listing/<%= deatailedData._id %>?_method=DELETE" method="POST">
+        <button type="submit" class="btn btn-danger">delete listings</button>
+    </form>
+</div>
+</body>
+</html>

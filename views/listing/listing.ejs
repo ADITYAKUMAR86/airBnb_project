@@ -1,0 +1,13 @@
+<%- include("../includes/boilerplate.ejs") %>
+    <h3>all users List</h3> 
+    <!-- <form action="/listing/new" method="get">
+        <button>create new Listing</button>
+    </form> -->
+    <ul>
+        <% for(let list of allList){ %>
+            <li><h4><a href="/listing/<%= list._id %>"><%= list.title %></a></h4></li>
+        <% } %>
+    </ul>
+</div>
+</body>
+</html>
